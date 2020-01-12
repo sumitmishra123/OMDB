@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OMDBCollectionViewCell" id="gTV-IL-0wX" customClass="OMDBCollectionViewCell" customModule="OMDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="439"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="439"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L1l-XY-80K">
+                        <rect key="frame" x="8" y="8" width="336" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="UjR-CB-XkH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfN-E4-84Q">
+                        <rect key="frame" x="8" y="232" width="336" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Released Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7I-uf-JGu">
+                        <rect key="frame" x="8" y="284.5" width="99" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="99" id="6vq-OF-RHh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4c-Fy-2vS">
+                        <rect key="frame" x="8" y="309.5" width="36" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="OU4-iY-t81"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89R-hA-jZX">
+                        <rect key="frame" x="123" y="284.5" width="229" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vip-xm-KyF">
+                        <rect key="frame" x="123" y="309.5" width="229" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeP-6m-jiw">
+                        <rect key="frame" x="8" y="259.5" width="336" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="EeP-6m-jiw" firstAttribute="top" secondItem="mfN-E4-84Q" secondAttribute="bottom" constant="8" id="175-OV-bVJ"/>
+                <constraint firstItem="89R-hA-jZX" firstAttribute="leading" secondItem="X7I-uf-JGu" secondAttribute="trailing" constant="16" id="18I-MG-qMY"/>
+                <constraint firstItem="H4c-Fy-2vS" firstAttribute="top" secondItem="X7I-uf-JGu" secondAttribute="bottom" constant="8" id="3Sv-35-I1l"/>
+                <constraint firstItem="X7I-uf-JGu" firstAttribute="top" secondItem="EeP-6m-jiw" secondAttribute="bottom" constant="8" id="B96-TG-sqw"/>
+                <constraint firstItem="Vip-xm-KyF" firstAttribute="centerX" secondItem="89R-hA-jZX" secondAttribute="centerX" id="BuU-Dr-v4A"/>
+                <constraint firstItem="Vip-xm-KyF" firstAttribute="top" secondItem="89R-hA-jZX" secondAttribute="bottom" constant="8" id="EOY-Lx-e7V"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Vip-xm-KyF" secondAttribute="trailing" id="FrS-V9-TmP"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="89R-hA-jZX" secondAttribute="trailing" id="JwA-rr-SOg"/>
+                <constraint firstItem="89R-hA-jZX" firstAttribute="centerY" secondItem="X7I-uf-JGu" secondAttribute="centerY" id="NU6-rH-1kd"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="mfN-E4-84Q" secondAttribute="trailing" constant="8" id="P4Z-nS-UZi"/>
+                <constraint firstItem="EeP-6m-jiw" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="8" id="QkN-fp-1ha"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="EeP-6m-jiw" secondAttribute="trailing" constant="8" id="SUm-Ph-D56"/>
+                <constraint firstItem="L1l-XY-80K" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="8" id="Sms-I2-X1a"/>
+                <constraint firstItem="Vip-xm-KyF" firstAttribute="leading" secondItem="H4c-Fy-2vS" secondAttribute="trailing" constant="79" id="ZGX-oy-ADM"/>
+                <constraint firstItem="H4c-Fy-2vS" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="8" id="fMI-jE-KnR"/>
+                <constraint firstItem="mfN-E4-84Q" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="8" id="gzU-7h-gv0"/>
+                <constraint firstItem="L1l-XY-80K" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="8" id="oy0-9c-dv0"/>
+                <constraint firstItem="X7I-uf-JGu" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="8" id="rCn-ud-oFv"/>
+                <constraint firstItem="mfN-E4-84Q" firstAttribute="top" secondItem="L1l-XY-80K" secondAttribute="bottom" constant="24" id="sA4-SY-Bg6"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="L1l-XY-80K" secondAttribute="trailing" constant="8" id="vIK-cr-BHv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="352" height="439"/>
+            <connections>
+                <outlet property="movieTitle" destination="mfN-E4-84Q" id="PVD-bn-yiM"/>
+                <outlet property="posterView" destination="L1l-XY-80K" id="kQ1-EL-CnD"/>
+                <outlet property="releaseYear" destination="89R-hA-jZX" id="ujO-rk-MmR"/>
+                <outlet property="typeMovie" destination="Vip-xm-KyF" id="8No-ng-L6H"/>
+                <outlet property="yearAgo" destination="EeP-6m-jiw" id="dbq-Xw-Yil"/>
+            </connections>
+            <point key="canvasLocation" x="153.59999999999999" y="156.97151424287858"/>
+        </collectionViewCell>
+    </objects>
+</document>

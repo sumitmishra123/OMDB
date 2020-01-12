@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4673E42A23CB925A009DCB46 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4673E42923CB925A009DCB46 /* SearchViewController.swift */; };
+		4673E42C23CB9556009DCB46 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4673E42B23CB9556009DCB46 /* DetailViewController.swift */; };
 		46A96A2023CB3B2300D4EFF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96A1F23CB3B2300D4EFF9 /* AppDelegate.swift */; };
 		46A96A2223CB3B2300D4EFF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96A2123CB3B2300D4EFF9 /* SceneDelegate.swift */; };
 		46A96A2423CB3B2300D4EFF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96A2323CB3B2300D4EFF9 /* ViewController.swift */; };
@@ -14,9 +16,20 @@
 		46A96A2A23CB3B2300D4EFF9 /* OMDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46A96A2823CB3B2300D4EFF9 /* OMDB.xcdatamodeld */; };
 		46A96A2C23CB3B2500D4EFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A96A2B23CB3B2500D4EFF9 /* Assets.xcassets */; };
 		46A96A2F23CB3B2500D4EFF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A96A2D23CB3B2500D4EFF9 /* LaunchScreen.storyboard */; };
+		46A96A4023CB3BB100D4EFF9 /* NetworkManagerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96A3823CB3BB100D4EFF9 /* NetworkManagerWrapper.swift */; };
+		46A96A4123CB3BB100D4EFF9 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96A3923CB3BB100D4EFF9 /* ApiCall.swift */; };
+		46A96A4323CB3BB100D4EFF9 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96A3B23CB3BB100D4EFF9 /* ResponseObject.swift */; };
+		46A96A4423CB3BB100D4EFF9 /* RequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96A3C23CB3BB100D4EFF9 /* RequestParameter.swift */; };
+		46A96A4B23CB3C5C00D4EFF9 /* OMDBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96A4A23CB3C5C00D4EFF9 /* OMDBViewModel.swift */; };
+		46A96A4E23CB401500D4EFF9 /* OMDBCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96A4C23CB401500D4EFF9 /* OMDBCollectionViewCell.swift */; };
+		46A96A4F23CB401500D4EFF9 /* OMDBCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A96A4D23CB401500D4EFF9 /* OMDBCollectionViewCell.xib */; };
+		46A96A5123CB408D00D4EFF9 /* OMDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96A5023CB408D00D4EFF9 /* OMDBModel.swift */; };
+		CBE26375BD1ED718EA417EC8 /* Pods_OMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1065A3124C1D4E6FBEB1E9 /* Pods_OMDB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4673E42923CB925A009DCB46 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4673E42B23CB9556009DCB46 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		46A96A1C23CB3B2300D4EFF9 /* OMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A96A1F23CB3B2300D4EFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46A96A2123CB3B2300D4EFF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +39,17 @@
 		46A96A2B23CB3B2500D4EFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46A96A2E23CB3B2500D4EFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46A96A3023CB3B2500D4EFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A96A3823CB3BB100D4EFF9 /* NetworkManagerWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerWrapper.swift; sourceTree = "<group>"; };
+		46A96A3923CB3BB100D4EFF9 /* ApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		46A96A3B23CB3BB100D4EFF9 /* ResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
+		46A96A3C23CB3BB100D4EFF9 /* RequestParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParameter.swift; sourceTree = "<group>"; };
+		46A96A4A23CB3C5C00D4EFF9 /* OMDBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBViewModel.swift; sourceTree = "<group>"; };
+		46A96A4C23CB401500D4EFF9 /* OMDBCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBCollectionViewCell.swift; sourceTree = "<group>"; };
+		46A96A4D23CB401500D4EFF9 /* OMDBCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OMDBCollectionViewCell.xib; sourceTree = "<group>"; };
+		46A96A5023CB408D00D4EFF9 /* OMDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBModel.swift; sourceTree = "<group>"; };
+		761A51A06C6BD4DD1B884B14 /* Pods-OMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDB.debug.xcconfig"; path = "Target Support Files/Pods-OMDB/Pods-OMDB.debug.xcconfig"; sourceTree = "<group>"; };
+		ACAAC780E111C88FE161AAE0 /* Pods-OMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDB.release.xcconfig"; path = "Target Support Files/Pods-OMDB/Pods-OMDB.release.xcconfig"; sourceTree = "<group>"; };
+		BB1065A3124C1D4E6FBEB1E9 /* Pods_OMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE26375BD1ED718EA417EC8 /* Pods_OMDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +69,8 @@
 			children = (
 				46A96A1E23CB3B2300D4EFF9 /* OMDB */,
 				46A96A1D23CB3B2300D4EFF9 /* Products */,
+				E5456AA513A6004CA8E4655F /* Pods */,
+				5E599D1BC8EDFD38E40FDDEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +85,83 @@
 		46A96A1E23CB3B2300D4EFF9 /* OMDB */ = {
 			isa = PBXGroup;
 			children = (
+				46A96A4923CB3C2E00D4EFF9 /* Model */,
+				46A96A4823CB3C1300D4EFF9 /* ViewController */,
+				46A96A4723CB3C0500D4EFF9 /* CustomViews */,
 				46A96A1F23CB3B2300D4EFF9 /* AppDelegate.swift */,
 				46A96A2123CB3B2300D4EFF9 /* SceneDelegate.swift */,
-				46A96A2323CB3B2300D4EFF9 /* ViewController.swift */,
 				46A96A2523CB3B2300D4EFF9 /* Main.storyboard */,
+				46A96A3623CB3BB100D4EFF9 /* Network */,
+				46A96A3D23CB3BB100D4EFF9 /* ViewModel */,
 				46A96A2B23CB3B2500D4EFF9 /* Assets.xcassets */,
 				46A96A2D23CB3B2500D4EFF9 /* LaunchScreen.storyboard */,
 				46A96A3023CB3B2500D4EFF9 /* Info.plist */,
 				46A96A2823CB3B2300D4EFF9 /* OMDB.xcdatamodeld */,
 			);
 			path = OMDB;
+			sourceTree = "<group>";
+		};
+		46A96A3623CB3BB100D4EFF9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				46A96A3823CB3BB100D4EFF9 /* NetworkManagerWrapper.swift */,
+				46A96A3923CB3BB100D4EFF9 /* ApiCall.swift */,
+				46A96A3B23CB3BB100D4EFF9 /* ResponseObject.swift */,
+				46A96A3C23CB3BB100D4EFF9 /* RequestParameter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		46A96A3D23CB3BB100D4EFF9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				46A96A4A23CB3C5C00D4EFF9 /* OMDBViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		46A96A4723CB3C0500D4EFF9 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				46A96A4C23CB401500D4EFF9 /* OMDBCollectionViewCell.swift */,
+				46A96A4D23CB401500D4EFF9 /* OMDBCollectionViewCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		46A96A4823CB3C1300D4EFF9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46A96A2323CB3B2300D4EFF9 /* ViewController.swift */,
+				4673E42B23CB9556009DCB46 /* DetailViewController.swift */,
+				4673E42923CB925A009DCB46 /* SearchViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		46A96A4923CB3C2E00D4EFF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46A96A5023CB408D00D4EFF9 /* OMDBModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E599D1BC8EDFD38E40FDDEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB1065A3124C1D4E6FBEB1E9 /* Pods_OMDB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5456AA513A6004CA8E4655F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				761A51A06C6BD4DD1B884B14 /* Pods-OMDB.debug.xcconfig */,
+				ACAAC780E111C88FE161AAE0 /* Pods-OMDB.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46A96A3323CB3B2500D4EFF9 /* Build configuration list for PBXNativeTarget "OMDB" */;
 			buildPhases = (
+				975E16780D55E9D1891A8702 /* [CP] Check Pods Manifest.lock */,
 				46A96A1823CB3B2300D4EFF9 /* Sources */,
 				46A96A1923CB3B2300D4EFF9 /* Frameworks */,
 				46A96A1A23CB3B2300D4EFF9 /* Resources */,
+				3E6A02D3085E5F1FFB91D8B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A96A4F23CB401500D4EFF9 /* OMDBCollectionViewCell.xib in Resources */,
 				46A96A2F23CB3B2500D4EFF9 /* LaunchScreen.storyboard in Resources */,
 				46A96A2C23CB3B2500D4EFF9 /* Assets.xcassets in Resources */,
 				46A96A2723CB3B2300D4EFF9 /* Main.storyboard in Resources */,
@@ -136,15 +233,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E6A02D3085E5F1FFB91D8B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OMDB/Pods-OMDB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OMDB/Pods-OMDB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OMDB/Pods-OMDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		975E16780D55E9D1891A8702 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OMDB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46A96A1823CB3B2300D4EFF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4673E42C23CB9556009DCB46 /* DetailViewController.swift in Sources */,
 				46A96A2423CB3B2300D4EFF9 /* ViewController.swift in Sources */,
 				46A96A2023CB3B2300D4EFF9 /* AppDelegate.swift in Sources */,
 				46A96A2223CB3B2300D4EFF9 /* SceneDelegate.swift in Sources */,
+				46A96A4023CB3BB100D4EFF9 /* NetworkManagerWrapper.swift in Sources */,
+				46A96A4E23CB401500D4EFF9 /* OMDBCollectionViewCell.swift in Sources */,
+				46A96A4323CB3BB100D4EFF9 /* ResponseObject.swift in Sources */,
+				46A96A5123CB408D00D4EFF9 /* OMDBModel.swift in Sources */,
+				4673E42A23CB925A009DCB46 /* SearchViewController.swift in Sources */,
+				46A96A4423CB3BB100D4EFF9 /* RequestParameter.swift in Sources */,
+				46A96A4123CB3BB100D4EFF9 /* ApiCall.swift in Sources */,
 				46A96A2A23CB3B2300D4EFF9 /* OMDB.xcdatamodeld in Sources */,
+				46A96A4B23CB3C5C00D4EFF9 /* OMDBViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +434,7 @@
 		};
 		46A96A3423CB3B2500D4EFF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 761A51A06C6BD4DD1B884B14 /* Pods-OMDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +452,7 @@
 		};
 		46A96A3523CB3B2500D4EFF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACAAC780E111C88FE161AAE0 /* Pods-OMDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
