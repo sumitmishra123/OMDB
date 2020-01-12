@@ -33,7 +33,7 @@ class OMDBCollectionViewCell: UICollectionViewCell {
         let date = NSDate()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy"
-        if(year.count > 4){
+        if(year.contains("–")){
             let data: String = String(year.split(separator: "–")[0])
             let dateString = dateFormatter.string(from: date as Date)
             let timeAgo = Int(dateString)! - Int(data)!

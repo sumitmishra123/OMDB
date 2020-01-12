@@ -35,7 +35,7 @@ class DetailViewController: UIViewController {
         let date = NSDate()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy"
-        if((dataForItems?.year.count)! > 5){
+        if((dataForItems?.year.contains("–"))!){
             let data: String = String((dataForItems?.year.split(separator: "–")[0])!)
             let dateString = dateFormatter.string(from: date as Date)
             let timeAgo = Int(dateString)! - Int(data)!
